@@ -35,12 +35,6 @@ const goNext=()=>{
     }
 }
 
-function del(){
-setTimeout(function (){
-   window.location.reload();
-}, 750);
-}
-
 function NewImg(){
-    del();
+    window.location.reload();
 }

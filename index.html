@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Image Slider</h1>
+    <main>
+      <img
+        src="https://source.unsplash.com/random/1000×500/?Peacock"
+        alt=""
+        class="slide"
+      />
+      <img
+        src="https://source.unsplash.com/random/1000×500/?insects"
+        alt=""
+        class="slide"
+      />
+      <img
+        src="https://source.unsplash.com/random/1000×500/?Mountains"
+        alt=""
+        class="slide"
+      />
+      <img
+        src="https://source.unsplash.com/random/1000×500/?birds"
+        alt=""
+        class="slide"
+      />
+      <img
+        src="https://source.unsplash.com/random/1000×500/?Fish"
+        alt=""
+        class="slide"
+      />
+      <img
+        src="https://source.unsplash.com/random/1000×500/?animal"
+        alt=""
+        class="slide"
+      />
+    </main>
+    <div class="nav">
+      <button
+        style="
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-left: 2%;
+          border: 4px solid black;
+        "
+        onclick="goPrev()"
+      >
+        <<
+      </button>
+      <button
+        style="
+          position: absolute;
+          right: 0;
+          top: 50%;
+          margin-right: 2%;
+          border: 4px solid black;
+        "
+        onclick="goNext()"
+      >
+        >>
+      </button>
+      <button class="refresh" onclick="NewImg()">New Image</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
